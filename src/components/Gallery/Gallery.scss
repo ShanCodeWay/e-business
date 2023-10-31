@@ -1,0 +1,235 @@
+ 
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Ubuntu:wght@500&family=Yanone+Kaffeesatz&display=swap');
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.Gallery {
+  padding: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Alegreya SC', sans-serif;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    border: 1px solid transparent;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      
+      border: 1px solid rgb(209, 165, 133);;
+    }
+
+    &.active {
+      background-color:  rgb(209, 165, 133);;
+      color: #fff;
+    }
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-top: 40px;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.collection{
+    max-width: 470px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all 0.14s ease-in-out;
+    h4 {
+        margin: 0;
+        margin-top: 15px;
+        font-size: 20px;
+        font-family: 'Alegreya SC', serif;
+    }
+    &:hover {
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05);
+        transform: translateY(-5px);
+    
+    }
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
+    img{
+        object-fit:  cover;
+    }
+    &__big {
+        height: 250px;
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 15px;
+    
+    }
+    &__mini {
+        width: 31%;
+        height: 80px;
+        border-radius: 20;
+    }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  font-size:20px;
+  border: 0;
+  color: rgb(84, 44, 15);
+  font-family: 'Alegreya SC', serif; 
+  background-color: rgb(254, 251, 247);
+
+  &:focus {
+    border: 1px solid rgb(84, 44, 15);
+  }
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+
+  li {
+    display: inline-block;
+    padding: 10px 17px;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &.active {
+      background-color: black;
+      color: #fff;
+    }
+  }
+}
+.zagruzka{
+  font-family: 'Alegreya SC', serif; 
+  margin-top: 10px;
+  margin-left: 10px;
+}
+ 
+.input{
+  width: 40px;
+  font-size:20px;
+  border: 0;
+  color: rgb(84, 44, 15);
+  font-family: 'Alegreya SC', serif; 
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn2{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: rgb(209, 165, 133);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 100%;
+  transition: background 0.1s linear;
+}
+.BasketForm{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.mainBasketForm{
+  border-radius: 5px;
+  z-index: 3;
+  background-color:  rgb(254, 251, 247);
+  font-family: 'Alegreya SC', serif;
+  width: 70%;
+  height: 90%;
+  top: 0;
+  margin-top: 0;
+  margin-left: 15%;
+  display: block;
+  text-align: center;
+}
+.btnBasketForm{
+    margin-top: 38.5%;
+    left: 46.5%;
+    position: absolute; 
+    margin-bottom: 0; 
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: rgb(209, 165, 133);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    transition: background 0.1s linear;
+}
+
+.greytext{
+  
+  font-size: 16px; 
+  color: rgb(119, 119, 119)
+}
