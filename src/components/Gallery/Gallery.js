@@ -19,6 +19,7 @@ const [basketFormVisibitity, setBasketFormVisibitity] =useState(false);
 const [thingsInBasket, setThingsInBasket] = useState(0)
  const basketClickEvent = ( )=>{
    
+
      
    setBasketFormVisibitity(!basketFormVisibitity)
 

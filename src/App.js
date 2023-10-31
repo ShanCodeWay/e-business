@@ -21,25 +21,7 @@ export function App() {
   const [points, setPoints] = useState((localStorage.getItem('points')  ) )
   const [userName, setUserName] = useState((localStorage.getItem('userName')) )
   
-  /* 
-  const mysql = require('mysql');  //подключаем mysql
-  const conn = mysql.createConnection({
-   host: "127.0.0.1:3306",
-  user: "root",
-  database: "users",
-  password: "",
-  }); 
-  conn.connect(err =>{
-    if (err) {
-      console.log(err); 
-      return(err); 
-    }
-    else{
-      console.log("database_ok"); 
-    }
-  }
-    )
-    */
+
       
   return (
  
@@ -95,12 +77,3 @@ export function App() {
 }
 
 export default App;
-/*
- <Router>  
-        <Routes>
-          <Route path = "/" element = {<Main/>}/>
-          <Route path = "/register" element = {<Register/>}/>
-          <Route path = "/review" element = {<Review/>}/>
-        </Routes>
-      </Router>  
- */

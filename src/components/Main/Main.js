@@ -90,9 +90,12 @@ render(scrollOn){
                </div>
              </td>
              <td className = 'mainTable'> 
-             Самые свежие натуральные ингредиенты при производстве мороженого
+             The freshest natural ingredients in ice cream production
              <div className='pontDesc'>
-             Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации существенных финансовых и административных условий.
+             Welcome, where the magic of ice cream comes to life. We're dedicated to crafting the creamiest, 
+             most delicious frozen treats that will leave your taste buds dancing with joy. Explore our menu to discover a world of flavors, each scoop made 
+             with love and served with a smile. Whether you're a fan of classic favorites or adventurous 
+             enough to try our unique creations, we have something for everyone. Join us in celebrating the simple pleasures of life, one scoop at a time.
              </div>
              </td>
              
@@ -104,7 +107,7 @@ render(scrollOn){
            </tr>
             
            <td className='probel'> </td>
-           <td>  <button className='btn' onClick={ this.showShowLearnMoreForm }>Оставить заявку</button></td>
+           <td>  <button className='btn' onClick={ this.showShowLearnMoreForm }>place your order</button></td>
           
            
     </table>
@@ -116,29 +119,29 @@ render(scrollOn){
            <div className="productItem">
            <img className="productPhoto" src={assorti} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Название продукта</div>
-                   <div className="productText">описание продукта</div>
+                   <div className="productTitle">Product name</div>
+                   <div className="productText">product description</div>
                </div>
            </div>
            <div className="productItem">
            <img className="productPhoto" src={brown} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Название продукта</div>
-                   <div className="productText">описание продукта</div>
+                   <div className="productTitle">Product name</div>
+                   <div className="productText">product description</div>
                </div>
            </div>
            <div className="productItem">
            <img className="productPhoto" src={beaut} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Название продукта</div>
-                   <div className="productText">описание продукта</div>
+                   <div className="productTitle">Product name</div>
+                   <div className="productText">product description</div>
                </div>
            </div>
            <div className="productItem">
            <img className="productPhoto" src={brown} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Название продукта</div>
-                   <div className="productText">описание продукта</div>
+                   <div className="productTitle">Product name</div>
+                   <div className="productText">product description</div>
                </div>
            </div>
            </div>
@@ -146,29 +149,29 @@ render(scrollOn){
            <div className="productItem">
            <img className="productPhoto" src={brown} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Название продукта</div>
-                   <div className="productText">описание продукта</div>
+                   <div className="productTitle">Product name</div>
+                   <div className="productText">product description</div>
                </div>
            </div>
            <div className="productItem">
            <img className="productPhoto" src={assorti} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Название продукта</div>
-                   <div className="productText">описание продукта</div>
+                   <div className="productTitle">Product name</div>
+                   <div className="productText">product description</div>
                </div>
            </div>
            <div className="productItem">
            <img className="productPhoto" src={beaut} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Название продукта</div>
-                   <div className="productText">описание продукта</div>
+                   <div className="productTitle">Product name</div>
+                   <div className="productText">product description</div>
                </div>
            </div>
            <div className="productItem">
            <img className="productPhoto" src={brown} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Название продукта</div>
-                   <div className="productText">описание продукта</div>
+                   <div className="productTitle">Product name</div>
+                   <div className="productText">product description</div>
                </div>
            </div>
            </div>
@@ -184,35 +187,35 @@ render(scrollOn){
                <div className="features1">
                    <div className="featuresItem">
                        <img className="featuresIcon" src={icon1} alt=""/>
-                       <h4 className="featuresTitle">Бесплатная доставка</h4>
-                       <div className="featuresText">По городу Уфа доставка Бесплатная. До 10км от города 2000, дальше - цена договорная</div>
+                       <h4 className="featuresTitle">Free Delivery</h4>
+                       <div className="featuresText">Delivery within the city of Ufa is free. Up to 10 km from the city 2000, further - price is negotiable</div>
                    </div>
                    <div className="featuresItem">
                    <img className="featuresIcon" src={icon2} alt=""/>
-                   <h4 className="featuresTitle">Лучшие цены</h4>
-                   <div className="featuresText">Мы постоянно пытаемся оптимизировать пути доставки и производства для лучшего предложения для вас </div>
+                   <h4 className="featuresTitle">The best prices</h4>
+                   <div className="featuresText">We are constantly trying to optimize our delivery and production routes to provide the best deal for you. </div>
                    </div>
                    <div className="featuresItem">
                    <img className="featuresIcon" src={icon3} alt=""/>
-                   <h4 className="featuresTitle">У нас все законно</h4>
-                   <div className="featuresText">Мы работаем согласно законодательству РФ и всегда предоставляем все отчеты</div>
+                   <h4 className="featuresTitle">All we are all legal</h4>
+                   <div className="featuresText">We work in accordance with the legislation of the Russian Federation and always provide all reports</div>
                    </div>
                    </div>
                    <div className="features1">
                    <div className="featuresItem">
                    <img className="featuresIcon" src={icon4} alt=""/>
-                   <h4 className="featuresTitle">Качественная упаковка</h4>
-                   <div className="featuresText">Мы закупаем качественные материалы для упаковки чтобы мороженое попало вам в руки без проблем и в наилучшем состоянии</div>
+                   <h4 className="featuresTitle">High quality packaging</h4>
+                   <div className="featuresText">We purchase high-quality materials for packaging so that the ice cream gets into your hands without problems and in the best condition.</div>
                    </div>
                    <div className="featuresItem">
                    <img className="featuresIcon" src={icon5} alt=""/>
-                   <h4 className="featuresTitle">Отличное качество</h4>
-                   <div className="featuresText">Мы регулярно проверяем наших поставщиков и тчательно следим за качеством товара</div>
+                   <h4 className="featuresTitle">Great quality</h4>
+                   <div className="featuresText">We regularly check our suppliers and carefully monitor the quality of goods</div>
                    </div>
                    <div className="featuresItem">
                    <img className="featuresIcon" src={icon6} alt=""/>
-                       <h4 className="featuresTitle">Растущая популярность</h4>
-                       <div className="featuresText">Мы всегда рады новым покупателям и делаем все возможное чтобы продолжать сотрудничество</div>
+                       <h4 className="featuresTitle">Growing popularity</h4>
+                       <div className="featuresText">We always welcome new customers and do everything possible to continue cooperation</div>
                    </div>
                    </div>
                </div> 

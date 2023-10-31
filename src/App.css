@@ -21,6 +21,8 @@
 }
 .menuWrapper{
   justify-content: right;
+  background-color: aqua;
+  width: 100%;
 }
 .menu{
  
@@ -71,8 +73,11 @@ body{
   margin-bottom: 0.5%;
 }
 .logo{
-  width: 55px;
-  height: 55px; 
+  padding-top: 10px;
+  margin-left: 10%;
+  width: 250px;
+  height: 70px; 
+  border-radius: 220px;
   
 }
 @keyframes App-logo-spin {
