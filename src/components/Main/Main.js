@@ -1,7 +1,7 @@
 import './Main.css';
 import React, { useState , Component } from 'react';
- 
- 
+import { Container, Typography, Grid, Link } from '@mui/material';
+import logo from  './src/logo.png';
 import brown from  './src/brown.jpg'; 
 import assorti from  './src/assorti.jpg'; 
  
@@ -18,8 +18,11 @@ import beaut from './src/beaut.jpg'
 
 import team1 from './src/team1.jpg'
 import team2 from './src/team2.jpg'
-import team3 from './src/team3.jpg'
-import team4 from './src/team4.jpg'
+import team3 from './src/team3.jfif'
+import team4 from './src/team4.jfif'
+import team5 from './src/team5.jfif'
+import team6 from './src/team6.jfif'
+import team7 from './src/team7.jfif'
 import icon1 from './src/icon1.png'
 import icon2 from './src/icon2.png'
 import icon3 from './src/icon3.png'
@@ -227,25 +230,51 @@ render(scrollOn){
                <div className="teamInner">
                    <div className="teamItem">
                    <img className="teamPhoto" src={team1} alt=""/>
-                       <div className="teamName">Исламгалеев Денис</div>
-                       <div className="teamProf">Генеральный директор</div>
+                       <div className="teamName">Darshana Wijebahu</div>
+                       <div className="teamProf">Group Leader</div>
                        <div className="teamText">
                            <p>
-                               Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
+                           Diverse and rich experience, the beginning of daily work to form a position entails the process of introducing and modernizing areas of progressive development.
                            </p>
                        </div>
                        <div className="social">
-                       <a className="socialItem" href="https://vk.com/denislamgaleev" target="_blank">
+                       <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                                 
                                 <img className='socialIcon' src = {vk}/> 
                              
                         </a>
-                        <a className="socialItem" href="https://cdnn21.img.ria.ru/images/sharing/article/1779307263.jpg?17793139991647899276" target="_blank">
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                              
                             <img className='socialIcon' src = {inst}/> 
                             
                         </a>
-                        <a className="socialItem" href="https://www.facebook.com/" target="_blank">
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                             
+                            <img className='socialIcon' src = {facebook}/> 
+                           
+                        </a>
+                       </div>
+                   </div>
+                   <div className="teamItem">
+                   <img className="teamPhoto" src={team2} alt=""/>
+                       <div className="teamName">Dulaj Upananda</div>
+                       <div className="teamProf">Group Member</div>
+                       <div className="teamText">
+                           <p>
+                              Diverse and rich experience, the beginning of daily work to form a position entails the process of introducing and modernizing areas of progressive development.      </p>
+                       </div>
+                       <div className="social">
+                       <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                                
+                                <img className='socialIcon' src = {vk}/> 
+                             
+                        </a>
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                             
+                            <img className='socialIcon' src = {inst}/> 
+                            
+                        </a>
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                              
                             <img className='socialIcon' src = {facebook}/> 
                            
@@ -255,25 +284,24 @@ render(scrollOn){
                     
                    <div className="teamItem">
                    <img className="teamPhoto" src={team3} alt=""/>
-                       <div className="teamName">Кильмухаметова Гузель</div>
-                       <div className="teamProf">Финансовый директор</div>
+                       <div className="teamName">Tharushi Nishanka</div>
+                       <div className="teamProf">Group Member</div>
                        <div className="teamText">
                            <p>
-                               Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
-                           </p>
+                              Diverse and rich experience, the beginning of daily work to form a position entails the process of introducing and modernizing areas of progressive development.      </p>
                        </div>
                        <div className="social">
-                           <a className="socialItem" href="https://vk.com/denislamgaleev" target="_blank">
+                           <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                                 
                                    <img className='socialIcon' src = {vk}/> 
                                 
                            </a>
-                           <a className="socialItem" href="https://cdnn21.img.ria.ru/images/sharing/article/1779307263.jpg?17793139991647899276" target="_blank">
+                           <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                                 
                                <img className='socialIcon' src = {inst}/> 
                                
                            </a>
-                           <a className="socialItem" href="https://www.facebook.com/" target="_blank">
+                           <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                                 
                                <img className='socialIcon' src = {facebook}/> 
                               
@@ -282,25 +310,24 @@ render(scrollOn){
                    </div>
                    <div className="teamItem">
                    <img className="teamPhoto" src={team4} alt=""/>
-                       <div className="teamName">Хамидуллина Гульнара</div>
-                       <div className="teamProf">Начальник отдела сбыта</div>
+                       <div className="teamName">Thamodhya Bandara</div>
+                       <div className="teamProf">Group Member</div>
                        <div className="teamText">
                            <p>
-                               Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
-                           </p>
+                              Diverse and rich experience, the beginning of daily work to form a position entails the process of introducing and modernizing areas of progressive development.      </p>
                        </div>
                        <div className="social">
-                       <a className="socialItem" href="https://vk.com/denislamgaleev" target="_blank">
+                       <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                                 
                                 <img className='socialIcon' src = {vk}/> 
                              
                         </a>
-                        <a className="socialItem" href="https://cdnn21.img.ria.ru/images/sharing/article/1779307263.jpg?17793139991647899276" target="_blank">
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                              
                             <img className='socialIcon' src = {inst}/> 
                             
                         </a>
-                        <a className="socialItem" href="https://www.facebook.com/" target="_blank">
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                              
                             <img className='socialIcon' src = {facebook}/> 
                            
@@ -308,33 +335,83 @@ render(scrollOn){
                        </div>
                    </div>
                    <div className="teamItem">
-                   <img className="teamPhoto" src={team2} alt=""/>
-                       <div className="teamName">Железнов Тимофей</div>
-                       <div className="teamProf">Креативный директор</div>
+                   <img className="teamPhoto" src={team5} alt=""/>
+                       <div className="teamName">Heshani Chnadrasekara</div>
+                       <div className="teamProf">Group Member</div>
                        <div className="teamText">
                            <p>
-                               Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
-                           </p>
+                              Diverse and rich experience, the beginning of daily work to form a position entails the process of introducing and modernizing areas of progressive development.      </p>
                        </div>
                        <div className="social">
-                       <a className="socialItem" href="https://vk.com/denislamgaleev" target="_blank">
+                       <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                                 
                                 <img className='socialIcon' src = {vk}/> 
                              
                         </a>
-                        <a className="socialItem" href="https://cdnn21.img.ria.ru/images/sharing/article/1779307263.jpg?17793139991647899276" target="_blank">
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                              
                             <img className='socialIcon' src = {inst}/> 
                             
                         </a>
-                        <a className="socialItem" href="https://www.facebook.com/" target="_blank">
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
                              
                             <img className='socialIcon' src = {facebook}/> 
                            
                         </a>
                        </div>
                    </div>
-                   
+                   <div className="teamItem">
+                   <img className="teamPhoto" src={team6} alt=""/>
+                       <div className="teamName">Sachini Fonseka</div>
+                       <div className="teamProf">Group Member</div>
+                       <div className="teamText">
+                           <p>
+                              Diverse and rich experience, the beginning of daily work to form a position entails the process of introducing and modernizing areas of progressive development.      </p>
+                       </div>
+                       <div className="social">
+                       <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                                
+                                <img className='socialIcon' src = {vk}/> 
+                             
+                        </a>
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                             
+                            <img className='socialIcon' src = {inst}/> 
+                            
+                        </a>
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                             
+                            <img className='socialIcon' src = {facebook}/> 
+                           
+                        </a>
+                       </div>
+                   </div>
+                   <div className="teamItem">
+                   <img className="teamPhoto" src={team7} alt=""/>
+                       <div className="teamName">Nethmi Dulanjali</div>
+                       <div className="teamProf">Group Member</div>
+                       <div className="teamText">
+                           <p>
+                              Diverse and rich experience, the beginning of daily work to form a position entails the process of introducing and modernizing areas of progressive development.      </p>
+                       </div>
+                       <div className="social">
+                       <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                                
+                                <img className='socialIcon' src = {vk}/> 
+                             
+                        </a>
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                             
+                            <img className='socialIcon' src = {inst}/> 
+                            
+                        </a>
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                             
+                            <img className='socialIcon' src = {facebook}/> 
+                           
+                        </a>
+                       </div>
+                   </div>
                    
                 
            </div> 
@@ -351,11 +428,12 @@ render(scrollOn){
                    </div>
                    <div className="reviewsContent">
                        <div className="reviewsText">
-                           "Значимость этих проблем настолько очевидна, что консультация с широким активом способствует подготовки и реализации обучения кадров."
+                       We're here to make your ice cream dreams come true. Whether you have questions, feedback, or special requests, we'd love to hear
+                        from you. Find your nearest location and come say hello. Your opinion matters t
+                        o us, and we're dedicated to serving you during our operating hours
+                        
                        </div>
-                       <div className="reviewsAuthor">
-                           Мария Вольвина - владелец торговой сети TiTotum
-                       </div>
+                     
                    </div>
                </div>
            
@@ -368,9 +446,70 @@ render(scrollOn){
    
    
    
-         <footer className='footerMain'>
-         SweetCold Inc. - 2022
-         </footer>
+        
+         <div className="reviews">
+            
+            <div component="footer" maxWidth="xl" style={{ backgroundColor: '#402', padding: '20px', color: 'white' }}>
+   <Grid container spacing={3}>
+     <Grid item xs={12} sm={4}>
+       <Typography variant="h6">Contact Information</Typography>
+       <Typography>
+         Address: 123 Main Street, City, Country
+       </Typography>
+       <Typography>
+         Phone: +123-456-7890
+       </Typography>
+       <Typography>
+         Email: contact@example.com
+       </Typography>
+     </Grid>
+     <Grid item xs={12} sm={4}>
+     <div className="social">
+                       <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                                
+                                <img className='socialIcon' src = {vk}/> 
+                             
+                        </a>
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                             
+                            <img className='socialIcon' src = {inst}/> 
+                            
+                        </a>
+                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
+                             
+                            <img className='socialIcon' src = {facebook}/> 
+                           
+                        </a>
+                       </div>
+
+
+     </Grid>
+     <Grid item xs={12} sm={4}>
+     <img src={logo} alt="Logo"  style={{ marginRight: '10px',
+              marginTop:'10px',
+    borderRadius: '10px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)',
+    transform: 'translateZ(5px)' }}/>
+     </Grid>
+   </Grid>
+   <Typography
+  variant="body2"
+  align="center"
+  style={{
+    marginTop: '20px',
+    color: 'white',
+    fontSize: '20px', // Increase the font size to your desired value
+    fontStyle: 'italic', // Apply an italic style or use 'fontWeight' for bold
+  }}
+>
+  &copy; {new Date().getFullYear} COOQUE.com
+</Typography>
+
+
+            </div>
+        
+    </div>
+       
        </div>
        
        { this.state.showLearnMoreForm ? (<>
