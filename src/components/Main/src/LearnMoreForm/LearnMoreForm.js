@@ -21,12 +21,12 @@ const handleNumberChange = (e) =>{
 const handleEmailChange = (e) =>{
   setEmail(e.target.value) 
 }
-const btnClick = async() =>{ /////здесь будет передача данных на почту
+const btnClick = async() =>{ 
   hideShowLearnMoreForm()
   const value = ({surname, name, number, email})
  
   try {
-    const {data} = await axios.post('https://63708fe208218c267e017d80.mockapi.io/Arr', value);
+    const {data} = await axios.post('', value);
     
 } catch (e) {
     console.log('Axios request failed:', e);
@@ -45,15 +45,15 @@ const btnClick = async() =>{ /////здесь будет передача дан�
             </div>
           <div className='textLearnMoreFormHeader'>
             
-             <h2>Ваша заявка:</h2>
+             <h2>Your Details:</h2>
              
             </div>
             <div className='textLearnMoreForm'>
             <div className='Reg' >
               <div> 
-            <input type = "text"     ///////////////////////////////фамилия
+            <input type = "text"    
       onChange={handleSurnameChange}
-         placeholder='Фамилия'
+         placeholder='username'
            
            className='inputReg'
            required
@@ -63,9 +63,8 @@ const btnClick = async() =>{ /////здесь будет передача дан�
             &nbsp; 
             </div>
             <div>
-            <input type = "text"      ///////////////////////////////имя
-        onChange={handleNameChange}
-         placeholder='Имя'
+            <input type = "text"      
+         placeholder='name'
          
            className='inputReg'
            required
@@ -75,9 +74,9 @@ const btnClick = async() =>{ /////здесь будет передача дан�
             &nbsp; 
             </div>
             <div>
-            <input type = "text"           ///////////////////////////////номер
+            <input type = "text"          
         onChange={handleNumberChange}
-           placeholder='Контактный номер'
+           placeholder='Contact number'
          
            className='inputReg'
            required
@@ -86,7 +85,7 @@ const btnClick = async() =>{ /////здесь будет передача дан�
             &nbsp; 
             </div>
             <div>
-            <input type = "text"      ///////////////////////////////email
+            <input type = "text"     
         onChange={handleEmailChange}
            placeholder='email'
          
@@ -102,11 +101,11 @@ const btnClick = async() =>{ /////здесь будет передача дан�
             &nbsp; 
             </div>
             <div className='btnLearnMoreWrapper'>  
-            <button className='btn'   onClick={   btnClick} >Отправить</button>
+            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+            
             </div>
           </div>
       </div>
       </div>
   )
 }
-//onClick={}

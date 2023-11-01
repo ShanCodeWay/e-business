@@ -8,7 +8,7 @@ export const BasketForm = ({ hideBasketForm, arr, collections, hideBasketFormBuy
   const [sum, setSum] = useState(0)
   const makeSum = (arr, obj) =>{
     for (let i =0; i<obj.lenght; i++){
-      console.log('массивы', arr[i], obj[i])
+      console.log('arrays', arr[i], obj[i])
       setSum(sum + (arr[i] * obj[i].cost))
     }
     console.log(sum)
@@ -19,7 +19,7 @@ export const BasketForm = ({ hideBasketForm, arr, collections, hideBasketFormBuy
         
         
        <div className = 'mainBasketForm'>
-       <button className='btnBasketForm'   onClick={  hideBasketFormBuy } >Купить</button>
+       <button className='btnBasketForm'   onClick={  hideBasketFormBuy } >Buy</button>
             
        <div className='allTextLearnMoreForm'>
        <div className='textLearnMoreForm'>
@@ -32,17 +32,11 @@ export const BasketForm = ({ hideBasketForm, arr, collections, hideBasketFormBuy
              
           <div className='textLearnMoreFormHeader'>
             
-          <h2> Ваша корзина </h2>
+          <h2> Your cart</h2>
 
            
           {
-      //     collections                                                                 
-           
-      //     .map((obj, index)=>(
-       //     arr[index] != undefined ?
-       //       makeSum(arr[index] * obj.cost) 
-       //       :  makeSum(0)
-       //    ))
+    
           }
 
          {
@@ -54,7 +48,7 @@ export const BasketForm = ({ hideBasketForm, arr, collections, hideBasketFormBuy
                
                <h3> <IcecreamIcon/> 
 
-                {obj.name}  <span class="greytext">  - {arr[index]} кг за  {arr[index] * obj.cost  }  
+                {obj.name}  <span class="greytext">  - {arr[index]} for  {arr[index] * obj.cost  }  
                  &nbsp; рублей  </span> </h3>
               : <></>
               
@@ -72,4 +66,3 @@ export const BasketForm = ({ hideBasketForm, arr, collections, hideBasketFormBuy
       </div>
   )
 }
-//onClick={}

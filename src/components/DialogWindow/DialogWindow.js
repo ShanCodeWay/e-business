@@ -29,11 +29,10 @@ export const DialogWindow = ({ hideDialogWindow, text} ) => {
             </div>
              
             <div className='btnLearnMoreWrapper'>  
-            <button className='btn'   onClick={ hideDialogWindow} >Закрыть</button>
+            <button className='btn'   onClick={ hideDialogWindow} >Close</button>
             </div>
           </div>
       </div>
       </div>
   )
 }
-//onClick={}

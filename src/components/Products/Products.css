@@ -22,6 +22,7 @@
 .limonPic{ 
     width: 450px;
     height: 320px;
+    border-radius: 20px;
 }
 .limonPicOneColor{ 
     margin-bottom:50%;
@@ -101,8 +102,9 @@
 
  
 .malinaPic{
-    width: 240px;
-    height: 380px;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
 }
 .malinaPicOneColor{
     width: 450px;
@@ -129,6 +131,13 @@
      
  }
  /*       */ 
- .yacheyka11{
-    width: 40%;
+ .pic{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+ }
+ .chocoPic{
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
  }

@@ -38,8 +38,8 @@ export const DialogWindowExit = ({ hideDialogWindow, hideDialogWindowExit,  text
             </div>
              
             <div className='btnLearnMoreWrapper'>  
-            <button className='btn1'   onClick={ hideDialogWindowExit}>Да</button>
-            <button className='btn1'   onClick={ hideDialogWindow}>Нет</button>
+            <button className='btn1'   onClick={ hideDialogWindowExit}>Yes</button>
+            <button className='btn1'   onClick={ hideDialogWindow}>No</button>
             </div>
           </div>
       </div>

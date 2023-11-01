@@ -2,13 +2,16 @@ import './App.css';
 import {Main} from './components/Main/Main';
 import {Register} from './components/Register/Register';
 import {Products} from './components/Products/Products';
+import CartApp from './cartsrc/CartApp';
 import {Routes, Route, BrowserRouter,  Navigate} from 'react-router-dom';
 import {React, useState} from 'react';
 import {Gallery } from './components/Gallery/Gallery'
 
 import {Header} from './components/Header/Header'
 import {Reviews} from './components/Reviews/Reviews'
- 
+import {Footer} from './components/Footer/Footer'
+import { Grid, Typography } from '@mui/material';
+
 export function App() {
    
   const [basketArr, setBasketArr] = useState([])
@@ -41,12 +44,13 @@ export function App() {
      
         <BrowserRouter>  
           <Routes>
+          <Route path = "/CartApp" element = {<CartApp/>}/>
             <Route path = "/" element = {<Main/>}/>
             <Route path = "/gallery" element = {<Gallery 
-         
+            
             
              />}/>
-          
+         
             <Route path = "/register" element = {!isLoggedIn?<Register
              props  
              setUserName = {setUserName} 
@@ -69,6 +73,7 @@ export function App() {
           </Routes>
         </BrowserRouter>
       </main>
+      <Footer/> 
     </div>
     
     </>

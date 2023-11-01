@@ -48,7 +48,7 @@ export class Register extends Component {
   })
   .catch((err)=>{
       console.warn(err);
-      alert('ошибка')
+      alert('error')
   });
   window.addEventListener('keyup', (e) => {
     if (e.key === 'Escape' ){
@@ -105,7 +105,7 @@ export class Register extends Component {
       
       
   }
-  handleLogIn = () =>{     //вход уже зареганного пользователя
+  handleLogIn = () =>{     
     const treg = {
       login: this.state.login, 
       password: this.state.password, 
@@ -166,7 +166,7 @@ export class Register extends Component {
      
     return (
       <>  
-         <DialogWindow text = {"Вы уже зарегистрированы!"} 
+         <DialogWindow text = {"You are already registered!"} 
     hideDialogWindow = {this.hideDialogWindow}/>
       <div className="Reg">
       <img src = {pic1} className='morozReg'/> 
@@ -179,12 +179,12 @@ export class Register extends Component {
            </div>
        
      
-     <h3 className='regElem1'>Вход/Регистрация</h3>
+     <h3 className='regElem1'>Login/Registration</h3>
     
       <div className='regElem3' >
        <input type = "text" 
        onChange={this.handleLoginChange}
-        placeholder='Логин'
+        placeholder='Login'
          name = "login"
           className='inputReg'
           required
@@ -193,14 +193,14 @@ export class Register extends Component {
        <div className='regElem'>
        <input type = "password"
         onChange={this.handlePasswordChange} 
-        placeholder='Пароль'
+        placeholder='Password'
           name = "parol"
           className='inputReg' 
           required/> 
       </div>
       <div className='regElem2'>
-      <button className='btnReg' onClick={this.addNewReg}>Регистрация</button>
-       <button className='btnReg'   onClick={this.handleLogIn}>Войти</button>
+      <button className='btnReg' onClick={this.addNewReg}>Registration</button>
+       <button className='btnReg'   onClick={this.handleLogIn}>To come in</button>
       
        </div>
        <div className='smallFormText'>  
@@ -216,7 +216,7 @@ export class Register extends Component {
     
     return ( <>  
     
-    <DialogWindow text = {"Неверный пароль!"} 
+    <DialogWindow text = {"Incorrect password!"} 
     hideDialogWindow = {this.hideDialogWindow}/>
 
 <div className="Reg">
@@ -231,12 +231,12 @@ export class Register extends Component {
             </div>
         
       
-      <h3 className='regElem1'>Вход/Регистрация</h3>
+      <h3 className='regElem1'> Login/Registration</h3>
      
        <div className='regElem3' >
         <input type = "text" 
         onChange={this.handleLoginChange}
-         placeholder='Логин'
+         placeholder='Login'
           name = "login"
            className='inputReg'
            required
@@ -245,14 +245,14 @@ export class Register extends Component {
         <div className='regElem'>
         <input type = "password"
          onChange={this.handlePasswordChange} 
-         placeholder='Пароль'
+         placeholder='Password'
            name = "parol"
            className='inputReg' 
            required/> 
        </div>
        <div className='regElem2'>
-       <button className='btnReg' onClick={this.addNewReg}>Регистрация</button>
-        <button className='btnReg'   onClick={this.handleLogIn}>Войти</button>
+       <button className='btnReg' onClick={this.addNewReg}>Registration</button>
+        <button className='btnReg'   onClick={this.handleLogIn}>log in</button>
        
         </div>
         <div className='smallFormText'>  
@@ -279,12 +279,12 @@ export class Register extends Component {
             </div>
         
       
-      <h3 className='regElem1'>Вход/Регистрация</h3>
+      <h3 className='regElem1'>Login/Registration</h3>
      
        <div className='regElem3' >
         <input type = "text" 
         onChange={this.handleLoginChange}
-         placeholder='Логин'
+         placeholder='Login'
           name = "login"
            className='inputReg'
            required
@@ -293,14 +293,14 @@ export class Register extends Component {
         <div className='regElem'>
         <input type = "password"
          onChange={this.handlePasswordChange} 
-         placeholder='Пароль'
+         placeholder='password'
            name = "parol"
            className='inputReg' 
            required/> 
        </div>
        <div className='regElem2'>
-       <button className='btnReg' onClick={this.addNewReg}>Регистрация</button>
-        <button className='btnReg'   onClick={this.handleLogIn}>Войти</button>
+       <button className='btnReg' onClick={this.addNewReg}>Registration</button>
+        <button className='btnReg'   onClick={this.handleLogIn}>log in</button>
        
         </div>
         <div className='smallFormText'>  

@@ -6,9 +6,9 @@ import {BasketForm } from './BasketForm.js'
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 export const Gallery = ( ) =>{
     const cats = [
-        {"name": "Все"},
-        {"name": "Ингридиенты"},
-        {"name": "Мороженое"},
+        {"name": "All"},
+        {"name": "Ingredients"},
+        {"name": "Ice cream"},
     ]
 const [categoryId, setCategoryId] = useState(0);
 const [searchValue, setSearchValue] = useState('');
@@ -29,10 +29,10 @@ const [thingsInBasket, setThingsInBasket] = useState(0)
  }
  const hideBasketFormBuy = () =>{
     setBasketFormVisibitity(false)
-    alert('Спасибо за покупку!')
+    alert('Thank you for your purchase!')
  }
 useEffect(()=>{
-    fetch(`https://63708fe208218c267e017d80.mockapi.io/register?${
+    fetch(`${
         categoryId ? `category=${categoryId}` : '' }`,
         
     )
@@ -44,13 +44,13 @@ useEffect(()=>{
     .catch((err)=>{
         console.warn(err);
      
-        alert('ошибка')
+        alert('error ')
     });
 }, [categoryId]);
 
  
 if (collections.length ===0)
-    return <h2 className = 'zagruzka'>Загрузка данных...</h2>
+    return <h2 className = 'loading'>Loading data...</h2>
 else
  
 if (basketFormVisibitity == true)
@@ -60,7 +60,7 @@ return (
      <BasketForm 
      arr ={inputValueArr} 
       hideBasketForm  = { hideBasketForm } 
-      text ={"форма"}
+      text ={"form"}
       collections ={collections }
       hideBasketFormBuy = {hideBasketFormBuy}
       /> 
@@ -70,13 +70,10 @@ return (
 return(
     <div className="Gallery">
           { 
-    //   collections    
-   //    .map((obj, index)=>(
-    //         setThingsInBasket(thingsInBasket+  obj.count*obj.cost)
-    //  ))
+   
        }
-        <a className='ShoppingBasketIcon'  onClick={basketClickEvent} > <ShoppingBasketIcon/>Корзина (0)</a> 
-      <h1>Товары</h1>
+        <a className='ShoppingBasketIcon'  onClick={basketClickEvent} > <ShoppingBasketIcon/>Basket (0)</a> 
+      <h1>Goods</h1>
       <div className="top">
 
    <ul className="tags">
@@ -96,7 +93,7 @@ return(
         <input value = {searchValue}                        
          onChange={e => setSearchValue(e.target.value)} 
          className="search-input" 
-         placeholder="Поиск по названию" 
+         placeholder="Search by name" 
          />
 
       </div>

@@ -12,7 +12,7 @@ export class Reviews extends Component {
        
   }; 
   addNewReview = (treview) =>{
-    axios.post('https://63708fe208218c267e017d80.mockapi.io/ArrDima', treview)
+    axios.post('', treview)
      
     .catch((err)=>{
       console.log(err)
@@ -54,7 +54,7 @@ export class Reviews extends Component {
           }
       })
      
-      fetch(`https://63708fe208218c267e017d80.mockapi.io/ArrDima`) 
+      fetch(``) 
     .then((res)=> res.json())
     .then((json) => {
       this.setState({
@@ -66,7 +66,7 @@ export class Reviews extends Component {
     .catch((err)=>{
         console.warn(err);
     
-        alert('ошибка')
+        alert('error')
     });
    
      
@@ -74,15 +74,16 @@ export class Reviews extends Component {
   
 render( ){
    
-  if (this.state.reviewsArr.length === 0)
-    return <h2 className = 'zagruzka'>Загрузка данных...</h2>
+  if ((this.state.reviewsArr ?? []).length === 0)
+
+  return <h2 className = 'zagruzka'>Loading data...</h2>
   else
   return (
-      
-      <>  
-     <div className='Reviews'> 
-      <div className='btnReviewsBlock'>  
-      <h2 className='h31'> Оставьте отзыв и мы сделаем вам скидку</h2>  <button className='btn' onClick={ this.showShowReviewsForm }>Оставить отзыв</button>
+     
+      <>
+     <div className='Reviews'>
+      <div className='btnReviewsBlock'>
+      <h2 className='h31'> Leave a review and we'll give you a discount</h2> <button className='btn' onClick={ this.showShowReviewsForm }>Leave a review</button>
            </div>
    
           

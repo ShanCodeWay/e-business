@@ -2,9 +2,18 @@ import './Main.css';
 import React, { useState , Component } from 'react';
 import { Container, Typography, Grid, Link } from '@mui/material';
 import logo from  './src/logo.png';
-import brown from  './src/brown.jpg'; 
-import assorti from  './src/assorti.jpg'; 
- 
+import ImageSlider from './ImageSlider';
+import { SliderData } from './SliderData';
+
+import p1 from  './src/p1.jpg'; 
+import p2 from  './src/p2.jpg'; 
+import p3 from  './src/p3.jpg';
+import p4 from  './src/p4.jpg'; 
+import p5 from  './src/p5.jpg'; 
+import p6 from  './src/p6.jpg';
+import p7 from  './src/p7.jpg'; 
+import p8 from  './src/p8.jpg'; 
+
 import pic1 from './src/1.png'
  
  
@@ -15,7 +24,7 @@ import pic3 from './src/3.png'
  
  
 import beaut from './src/beaut.jpg'
-
+import map from './src/map.png'
 import team1 from './src/team1.jpg'
 import team2 from './src/team2.jpg'
 import team3 from './src/team3.jfif'
@@ -81,14 +90,15 @@ render(scrollOn){
         <>  
        
          <div className="Main"  >
+       
          <header className="Main-header">
           
-            
+         
            <table border="0" className='table'> 
            
            <tr>
            <td className='probel'> 
-               <div>  
+               <div className='pic1'>  
                  <img src = {pic1} className='moroz'/> 
                </div>
              </td>
@@ -101,80 +111,83 @@ render(scrollOn){
              enough to try our unique creations, we have something for everyone. Join us in celebrating the simple pleasures of life, one scoop at a time.
              </div>
              </td>
-             
+
+            
+            
              <td className='probel'> 
-             <div>  
+             <div className='pic1'>  
              <img src = {pic3} className='cacao'/> 
              </div>
              </td>
            </tr>
             
            <td className='probel'> </td>
-           <td>  <button className='btn' onClick={ this.showShowLearnMoreForm }>place your order</button></td>
+           <td>  </td>
           
            
     </table>
          </header>
+         <ImageSlider />
          <body style={{overflow:isScrollOn}} >
          <div className="products">
        <div className="pictures">
           
            <div className="productItem">
-           <img className="productPhoto" src={assorti} alt="" width="650"/>
+           <img className="productPhoto" src={p1} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Product name</div>
-                   <div className="productText">product description</div>
+                   <div className="productTitle">Classic Vanilla Bliss</div>
+                   <div className="productText">Indulge in the timeless delight of smooth and creamy vanilla ice cream. It's the perfect canvas for any topping or simply enjoyed on its own.</div>
                </div>
            </div>
            <div className="productItem">
-           <img className="productPhoto" src={brown} alt="" width="650"/>
+           <img className="productPhoto" src={p2} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Product name</div>
-                   <div className="productText">product description</div>
+                   <div className="productTitle">Decadent Chocolate Delight</div>
+                   <div className="productText">Satisfy your chocolate cravings with our rich and velvety chocolate ice cream. It's a heavenly treat for all the chocoholics out there.</div>
                </div>
            </div>
            <div className="productItem">
-           <img className="productPhoto" src={beaut} alt="" width="650"/>
+           <img className="productPhoto" src={p3} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Product name</div>
-                   <div className="productText">product description</div>
+                   <div className="productTitle">Strawberry Fields Forever</div>
+                   <div className="productText">Immerse yourself in the sweet, fruity joy of our strawberry ice cream. Made with real strawberries, it's a taste of summer in every scoop.</div>
                </div>
            </div>
            <div className="productItem">
-           <img className="productPhoto" src={brown} alt="" width="650"/>
+           <img className="productPhoto" src={p4} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Product name</div>
-                   <div className="productText">product description</div>
+                   <div className="productTitle">Mint Chocolate Chip Marvel</div>
+                   <div className="productText">Cool and refreshing, our mint chocolate chip ice cream combines a burst of mint with decadent chocolate chips for a refreshing treat.</div>
                </div>
            </div>
            </div>
            <div className="pictures">
            <div className="productItem">
-           <img className="productPhoto" src={brown} alt="" width="650"/>
+           <img className="productPhoto" src={p5} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Product name</div>
-                   <div className="productText">product description</div>
+                   <div className="productTitle">Caramel Swirl Sensation</div>
+                   <div className="productText">Enjoy the perfect balance of sweet and salty with our caramel swirl ice cream. Ribbons of caramel laced through creamy goodness make every bite unforgettable.</div>
                </div>
            </div>
            <div className="productItem">
-           <img className="productPhoto" src={assorti} alt="" width="650"/>
+           <img className="productPhoto" src={p6} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Product name</div>
-                   <div className="productText">product description</div>
+                   <div className="productTitle">Cookies 'n Cream Dream</div>
+                   <div className="productText">Dive into a world of cookie crumbs and creamy goodness with our cookies 'n cream ice cream. It's a delightful blend of childhood nostalgia and pure joy.</div>
                </div>
            </div>
            <div className="productItem">
-           <img className="productPhoto" src={beaut} alt="" width="650"/>
+           <img className="productPhoto" src={p7} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Product name</div>
-                   <div className="productText">product description</div>
+                   <div className="productTitle">Rocky Road Adventure</div>
+                   <div className="productText">Brace yourself for an adventure in every scoop with our rocky road ice cream. Marshmallows, nuts, and chocolate chunks make this a flavor-packed journey.</div>
                </div>
            </div>
            <div className="productItem">
-           <img className="productPhoto" src={brown} alt="" width="650"/>
+           <img className="productPhoto" src={p8} alt="" width="650"/>
                <div className="productContent">
-                   <div className="productTitle">Product name</div>
-                   <div className="productText">product description</div>
+                   <div className="productTitle">Tropical Paradise Sorbet</div>
+                   <div className="productText">Experience a tropical escape with our exotic sorbet. This dairy-free, refreshing treat is bursting with the flavors of mango, pineapple, and passion fruit.</div>
                </div>
            </div>
            </div>
@@ -433,10 +446,11 @@ render(scrollOn){
                         o us, and we're dedicated to serving you during our operating hours
                         
                        </div>
-                     
+                       
                    </div>
                </div>
-           
+               <button type="button" class="btn btn-primary btn-lg" onClick={this.showShowLearnMoreForm}>CONTACT US</button>
+      
        </div>
    
    
@@ -447,69 +461,8 @@ render(scrollOn){
    
    
         
-         <div className="reviews">
-            
-            <div component="footer" maxWidth="xl" style={{ backgroundColor: '#402', padding: '20px', color: 'white' }}>
-   <Grid container spacing={3}>
-     <Grid item xs={12} sm={4}>
-       <Typography variant="h6">Contact Information</Typography>
-       <Typography>
-         Address: 123 Main Street, City, Country
-       </Typography>
-       <Typography>
-         Phone: +123-456-7890
-       </Typography>
-       <Typography>
-         Email: contact@example.com
-       </Typography>
-     </Grid>
-     <Grid item xs={12} sm={4}>
-     <div className="social">
-                       <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
-                                
-                                <img className='socialIcon' src = {vk}/> 
-                             
-                        </a>
-                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
-                             
-                            <img className='socialIcon' src = {inst}/> 
-                            
-                        </a>
-                        <a className="socialItem" href="https://www.linkedin.com/in/darshana-wijebahu/" target="_blank">
-                             
-                            <img className='socialIcon' src = {facebook}/> 
-                           
-                        </a>
-                       </div>
 
-
-     </Grid>
-     <Grid item xs={12} sm={4}>
-     <img src={logo} alt="Logo"  style={{ marginRight: '10px',
-              marginTop:'10px',
-    borderRadius: '10px',
-    boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)',
-    transform: 'translateZ(5px)' }}/>
-     </Grid>
-   </Grid>
-   <Typography
-  variant="body2"
-  align="center"
-  style={{
-    marginTop: '20px',
-    color: 'white',
-    fontSize: '20px', // Increase the font size to your desired value
-    fontStyle: 'italic', // Apply an italic style or use 'fontWeight' for bold
-  }}
->
-  &copy; {new Date().getFullYear} COOQUE.com
-</Typography>
-
-
-            </div>
-        
-    </div>
-       
+    
        </div>
        
        { this.state.showLearnMoreForm ? (<>

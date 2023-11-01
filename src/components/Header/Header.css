@@ -1,9 +1,0 @@
-.button {
-    color: white;
-    transition: background-color 0.3s;
-    background-color: transparent;
-  }
-  
-  .button:hover {
-    background-color: black; /* Change to your desired hover color */
-  }
