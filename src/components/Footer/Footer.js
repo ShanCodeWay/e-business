@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Typography } from '@mui/material';
 
 import logo from  './src/logo.png';
+import ice from  './src/1.png';
 
 
 import p1 from  './src/p1.jpg'; 
@@ -115,28 +116,46 @@ function Footer() {
             style={{
             marginRight: '10px',
             marginTop: '10px',
-            border: '2px solid white', // Use the 'border' property with 'style', 'width', and 'color'
+            border: '2px solid white', 
             borderRadius: '10px',
             boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)',
             transform: 'translateZ(5px)',
             }}
             />
+             
             
             </Grid>
-            </Grid>
+            <img
+            src={ice}
+            alt="Logo"
+            style={{
+                position: 'absolute',
+            marginLeft: '60%',
+            marginTop: '110px',
+            width: '30%',
+            height: '30%',
+            borderRadius: '10px',
+            boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)',
+            transform: 'translateZ(5px)',
+            }}
+            />
             <Typography
             variant="body2"
             align="center"
             style={{
             
-            
+            position: 'absolute',
             color: 'white',
-            fontSize: '20px',
+            fontSize: '40px',
             fontStyle: 'italic', 
+            marginLeft: '40%',
+            marginTop: '400px',
             }}
             >
             &copy; {new Date().getFullYear} COOQUE.com
-            </Typography>
+            </Typography>   
+            </Grid>
+            
             
             
             </div>

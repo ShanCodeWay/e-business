@@ -35,7 +35,7 @@ export class Register extends Component {
  
   componentDidMount(){
      
-   fetch(`https://63708fe208218c267e017d80.mockapi.io/Arr`) 
+   fetch(``) 
   .then((res)=> res.json())
   .then((json) => {
     
@@ -58,7 +58,7 @@ export class Register extends Component {
 }
   
   
-  addNewReg = ( ) =>{    //регистрация нового пользователя
+  addNewReg = ( ) =>{   
     const treg = {
       login: this.state.login, 
       password: this.state.password, 
@@ -81,7 +81,7 @@ export class Register extends Component {
       }
        
     }
-    axios.post('https://63708fe208218c267e017d80.mockapi.io/Arr', treg)
+    axios.post('', treg)
     .catch((err)=>{
       console.log(err)
       alert(err)

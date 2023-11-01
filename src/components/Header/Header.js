@@ -1,5 +1,6 @@
 import './Header.css';
 import logo from  './src/logo.png';
+import ice from  './src/1.png';
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, IconButton, Dialog } from '@mui/material';
 import { Logout as LogoutIcon } from '@mui/icons-material';
@@ -95,6 +96,20 @@ export const Header = ({
               <span style={{ fontFamily: 'Arial', fontWeight: 'bold', color: 'White' }}>ICE</span>
               <span style={{ fontFamily: 'Times New Roman', fontStyle: 'italic', color: 'pink', fontWeight: 'bold' }}> CREAM</span>
             </Typography>
+            <img
+              src={ice}
+              alt="p1"
+              style={{
+                height: '10%',
+                width: '10%',
+                marginRight: '10px',
+                marginTop: '10px',
+                borderRadius: '10px',
+                boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)',
+                transform: 'translateZ(5px)',
+                
+              }}
+            />
             <div style={{ flexGrow: 1 }}></div>
             <Button
               className='button'
